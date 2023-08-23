@@ -340,7 +340,7 @@ header .navbar {
 .actualite .holder .image {
     background-color: gold;
     height: 500px;
-    width: 642px;
+    width: 760px;
     margin: auto;
     position: relative;
 
@@ -353,6 +353,7 @@ header .navbar {
     left: 20px;
     width: 100%;
     top: 18px;
+    background-size: cover;
 
 }
 
@@ -449,3 +450,91 @@ header .navbar {
     }
 }
 /* end actualite */
+
+
+/* start achter */
+
+.acheter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.acheter .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acheter .container .holder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 50%;
+}
+
+.acheter .container .images {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.acheter .container .holder p {
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.acheter .container .holder a {
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.acheter .container .images .image {
+    display: flex;
+    align-items: flex-end;
+    gap: 13px;
+}
+
+.acheter .container .images .image:first-child img:first-child {
+    width: 400px;
+}
+
+.acheter .container .images .image:last-child img:last-child {
+    width: 400px;
+}
+.acheter .container .images .image img {
+    width: 100px;
+}
+
+
+@media (max-width: 900px) {
+    .acheter .container {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .acheter .container .holder {
+        align-items: center;
+    text-align: center;
+    }
+
+
+}
+
+@media (max-width: 555px) {
+    .acheter .container .images .image:first-child img:first-child {
+        width: 225px;
+    }
+    
+    .acheter .container .images .image:last-child img:last-child {
+        width: 225px;
+    }
+
+    .acheter .container .images .image img {
+        width: 90px;
+    }
+}
+
+/* end achter */
